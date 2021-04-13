@@ -47,13 +47,16 @@ namespace ProductComplaintsManagementSystem
             productsList.Add(ballpen);
             Product notebook = new Product("Green Apple", "0002", "Notebook", 250);
             productsList.Add(notebook);
+            Product ruler = new Product("Orion", "0005", "Ruler", 250);
+            productsList.Add(ruler);
         }
 
         static void ShowAvailableProducts()
         {
-            foreach (Product product in productsList)
+            for (int i = 0; i < productsList.Count; i++)
             {
-                Console.WriteLine(product.GetProductName());
+                Console.WriteLine($"{i} - {productsList[i].GetProductName()}");
+
             }
         }
 
