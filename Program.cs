@@ -9,38 +9,32 @@ namespace ProductComplaintsManagementSystem
 
         static void Main(string[] args)
         {
-            //Product ballpen = new Product("Panda", "0001", "Ballpen", 500);
-
+            Instantiate();
+            
             //ProductComplaint complaint = new ProductComplaint("josel", new DateTime(2021, 4, 13), "this is a content");
-            //ProductComplaint complaint2 = new ProductComplaint("josel2", new DateTime(2021, 4, 17), "this is a content2");
-
-            //ballpen.AddComplaint(complaint);
-            //ballpen.AddComplaint(complaint2);
-
-            //List<ProductComplaint> complaintsList = ballpen.GetComplaints();
-
-            //complaintsList.ForEach(pComplaint =>
+            //productsList[0].AddComplaint(complaint);
+            //List<ProductComplaint> ballpenComplaints = productsList[0].GetComplaints();
+            //ballpenComplaints.ForEach(delegate (ProductComplaint productComplaint)
             //{
-            //    Console.WriteLine(pComplaint.GetAllInfo());
+            //    Console.WriteLine(productComplaint.GetAllInfo());
             //});
 
-            Instantiate();
 
 
-            Console.WriteLine("Welcome to Product Complaints Management System");
-            Console.WriteLine("Available products: ");
-            ShowAvailableProducts();
+            //Console.WriteLine("Welcome to Product Complaints Management System");
+            //Console.WriteLine("Available products: ");
+            //ShowAvailableProducts();
 
-            Console.WriteLine();
-            Console.WriteLine("Please type:");
-            Console.WriteLine($"\'q\' if you want to view information about ");
-            Console.WriteLine($"\'a\' if you want");
-            Console.Write("INPUT: ");
+            //Console.WriteLine();
+            //Console.WriteLine("Please type:");
+            //Console.WriteLine($"\'q\' if you want to view information about ");
+            //Console.WriteLine($"\'a\' if you want");
+            //Console.Write("INPUT: ");
 
 
         }
 
-
+        // Create some hard coded dummy Products
         static void Instantiate()
         {
             Product ballpen = new Product("Panda", "0001", "Ballpen", 500);
@@ -55,8 +49,7 @@ namespace ProductComplaintsManagementSystem
         {
             for (int i = 0; i < productsList.Count; i++)
             {
-                Console.WriteLine($"{i} - {productsList[i].GetProductName()}");
-
+                Console.WriteLine($"{i} - {productsList[i].ProductName}");
             }
         }
 

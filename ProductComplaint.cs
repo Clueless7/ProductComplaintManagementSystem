@@ -10,46 +10,34 @@ namespace ProductComplaintsManagementSystem
         private DateTime _date;
         private string _content;
 
-        public ProductComplaint(string author, DateTime date, string content)
+        public string Author
         {
-            _author = author;
-            _date = date;
-            _content = content;
+            get => _author;
+            set => _author = value;
         }
 
-        public string GetAuthor()
+        public DateTime Date
         {
-            return _author;
+            get => _date;
+            set => _date = value;
         }
 
-        public void SetAuthor(string author)
+        public string Content
         {
-            _author = author;
-        }
-
-        public DateTime GetDate()
-        {
-            return _date;
-        }
-
-        public void SetDate(DateTime date)
-        {
-            _date = date;
-        }
-
-        public string GetContent()
-        {
-            return _content;
-        }
-
-        public void SetContent(string content)
-        {
-            _content = content;
+            get => _content;
+            set => _content = value;
         }
 
         public string GetAllInfo()
         {
             return $"author: {_author}, DateTime: {_date}, content: {_content}";
+        }
+
+        public ProductComplaint(string author, DateTime date, string content)
+        {
+            _author = author;
+            _date = date;
+            _content = content;
         }
     }
 }

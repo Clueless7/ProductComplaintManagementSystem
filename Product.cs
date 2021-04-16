@@ -12,52 +12,28 @@ namespace ProductComplaintsManagementSystem
         private int _productQuantity;
         private List<ProductComplaint> _productComplaints = new List<ProductComplaint>();
 
-        public Product(string brand, string code, string name, int quantity)
+        public string ProductBrand
         {
-            _productBrand = brand;
-            _productCode = code;
-            _productName = name;
-            _productQuantity = quantity;
+            get => _productBrand;
+            set => _productBrand = value;
         }
 
-        public string GetProductBrand()
+        public string ProductCode
         {
-            return _productBrand;
+            get => _productCode;
+            set => _productCode = value;
         }
 
-        public void SetProductBrand(string brand)
+        public string ProductName
         {
-            _productBrand = brand;
+            get => _productName;
+            set => _productName= value;
         }
 
-        public string GetProductCode()
+        public int ProductQuantity
         {
-            return _productCode;
-        }
-
-        public void SetProductCode(string code)
-        {
-            _productCode = code;
-        }
-
-        public string GetProductName()
-        {
-            return _productName;
-        }
-
-        public void SetProductName(string name)
-        {
-            _productName = name;
-        }
-
-        public int GetProductQuantity()
-        {
-            return _productQuantity;
-        }
-
-        public void SetProductQuantity(int quantity)
-        {
-            _productQuantity = quantity;
+            get => _productQuantity;
+            set => _productQuantity= value;
         }
 
         public void AddComplaint(ProductComplaint complaint)
@@ -69,5 +45,14 @@ namespace ProductComplaintsManagementSystem
         {
             return _productComplaints;
         }
+
+        public Product(string brand, string code, string name, int quantity)
+        {
+            _productBrand = brand;
+            _productCode = code;
+            _productName = name;
+            _productQuantity = quantity;
+        }
+
     }
 }
