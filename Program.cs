@@ -10,7 +10,7 @@ namespace ProductComplaintsManagementSystem
         static void Main(string[] args)
         {
             Instantiate();
-            
+
             //ProductComplaint complaint = new ProductComplaint("josel", new DateTime(2021, 4, 13), "this is a content");
             //productsList[0].AddComplaint(complaint);
             //List<ProductComplaint> ballpenComplaints = productsList[0].GetComplaints();
@@ -19,18 +19,19 @@ namespace ProductComplaintsManagementSystem
             //    Console.WriteLine(productComplaint.GetAllInfo());
             //});
 
+            Console.WriteLine("Welcome to Product Complaints Management System");
+            Console.WriteLine("Available products: ");
+            Console.WriteLine("Index\t Product");
+            ShowAvailableProducts();
 
+            Console.WriteLine("Please type: ");
+            Console.WriteLine("or \'q\' to quit");
+            Console.WriteLine("or \'s\' to select a product");
+            Console.Write("INPUT: ");
 
-            //Console.WriteLine("Welcome to Product Complaints Management System");
-            //Console.WriteLine("Available products: ");
-            //ShowAvailableProducts();
+            Console.WriteLine();
 
-            //Console.WriteLine();
-            //Console.WriteLine("Please type:");
-            //Console.WriteLine($"\'q\' if you want to view information about ");
-            //Console.WriteLine($"\'a\' if you want");
-            //Console.Write("INPUT: ");
-
+            // TODO: Create Menu System
 
         }
 
@@ -49,7 +50,7 @@ namespace ProductComplaintsManagementSystem
         {
             for (int i = 0; i < productsList.Count; i++)
             {
-                Console.WriteLine($"{i} - {productsList[i].ProductName}");
+                Console.WriteLine($"{i} \t {productsList[i].ProductName}");
             }
         }
 
