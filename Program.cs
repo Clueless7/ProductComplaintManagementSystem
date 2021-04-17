@@ -58,8 +58,8 @@ namespace ProductComplaintsManagementSystem
             ShowAvailableProducts(false);
             Console.WriteLine();
             Console.WriteLine("Please type: ");
-            Console.WriteLine("or \'q\' to quit");
-            Console.WriteLine("or \'s\' to select a product");
+            Console.WriteLine("\'q\' to quit");
+            Console.WriteLine("\'s\' to select a product");
             Console.WriteLine();
             Console.Write("INPUT: ");
 
