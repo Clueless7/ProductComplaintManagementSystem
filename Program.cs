@@ -96,7 +96,6 @@ namespace ProductComplaintsManagementSystem
             {
                 case "0":
                     {
-
                         bool showThirdMenu = true;
 
                         while (showThirdMenu)
@@ -108,7 +107,6 @@ namespace ProductComplaintsManagementSystem
                     }
                 case "1":
                     {
-
                         bool showThirdMenu = true;
 
                         while (showThirdMenu)
@@ -120,7 +118,6 @@ namespace ProductComplaintsManagementSystem
                     }
                 case "2":
                     {
-
                         bool showThirdMenu = true;
 
                         while (showThirdMenu)
@@ -180,7 +177,6 @@ namespace ProductComplaintsManagementSystem
 
                         return false;
                     }
-                    
                 case "b":
                     return false;
                 default:
