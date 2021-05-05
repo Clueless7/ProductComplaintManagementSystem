@@ -17,7 +17,6 @@ namespace ProductComplaintsManagementSystem
             {
                 showMenu = MainMenu();
             }
-
         }
 
         // Create some hard coded dummy Products
@@ -46,7 +45,6 @@ namespace ProductComplaintsManagementSystem
                     Console.WriteLine($"{productsList[i].ProductName}");
                 }
             }
-
         }
 
         static bool MainMenu()
@@ -79,7 +77,6 @@ namespace ProductComplaintsManagementSystem
                 default:
                     return true;
             }
-            
         }
 
         static bool ShowSecondMenu()
@@ -138,7 +135,6 @@ namespace ProductComplaintsManagementSystem
                 default:
                     return true;
             }
-
         }
 
         static bool ShowThirdMenu(int index)
@@ -190,8 +186,6 @@ namespace ProductComplaintsManagementSystem
                 default:
                     return true;
             }
-
-
         }
 
         static bool ShowFourthMenu(int index)
@@ -212,8 +206,6 @@ namespace ProductComplaintsManagementSystem
             Console.ReadLine();
 
             return false;
-
         }
-
     }
 }
