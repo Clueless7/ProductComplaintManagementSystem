@@ -193,7 +193,6 @@ namespace ProductComplaintsManagementSystem
             Console.Clear();
             Console.WriteLine("Main > Product Select > Product Information > Add Complaint");
             Console.WriteLine("==========ADD PRODUCT COMPLAINT==========");
-
             Console.Write("Enter name: ");
             string complaintName = Console.ReadLine();
             Console.Write("Enter complaint: ");
