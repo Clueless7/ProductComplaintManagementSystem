@@ -51,6 +51,5 @@ namespace ProductComplaintsManagementSystem
             _productName = name;
             _productQuantity = quantity;
         }
-
     }
 }

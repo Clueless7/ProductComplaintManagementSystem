@@ -19,7 +19,7 @@ namespace ProductComplaintsManagementSystem
             }
         }
 
-        // Create some hard coded dummy Products
+        // Create some hardcoded dummy Products
         static void Instantiate()
         {
             Product ballpen = new Product("Panda", "0001", "Ballpen", 500);
@@ -30,6 +30,7 @@ namespace ProductComplaintsManagementSystem
             productsList.Add(ruler);
         }
 
+        // Print the list of products each with index numbers
         static void ShowAvailableProducts(bool withIndex)
         {
             if (withIndex == true)
